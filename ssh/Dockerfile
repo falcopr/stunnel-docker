@@ -17,8 +17,8 @@ RUN sed -i "s/UsePrivilegeSeparation.*/UsePrivilegeSeparation no/g" /etc/ssh/ssh
 #RUN sed -i "s/^#PermitRootLogin prohibit-password/PermitRootLogin yes/g" /etc/ssh/sshd_config
 RUN touch /root/.Xauthority
 
-ADD ./stunnel/setup.sh /setup.sh
-ADD ./stunnel/start.sh /start.sh
+ADD ./setup.sh /setup.sh
+ADD ./start.sh /start.sh
 RUN chmod +x /*.sh
 
 RUN useradd docker \
