@@ -27,7 +27,6 @@ docker run -d --name stunnel -p 2222:22 -e ROOT_PASS="mypass" falcoprescher/debi
 docker logs ssh
 docker logs stunnel
 ``
-##
 
 ## Execute additional batch on running container
 ``
